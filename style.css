@@ -1,0 +1,46 @@
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-dana, .btn-gopay, .btn-ovo {
+  padding: 12px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 0; /* ini bikin kotak */
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-dana {
+  background-color: #0095DA;
+}
+
+.btn-gopay {
+  background-color: #00AA13;
+}
+
+.btn-ovo {
+  background-color: #5F259F;
+}
+
+.btn-dana:hover {
+  background-color: #007bb8;
+}
+
+.btn-gopay:hover {
+  background-color: #008e10;
+}
+
+.btn-ovo:hover {
+  background-color: #4c1d7c;
+}
+
+.btn-ovo:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}

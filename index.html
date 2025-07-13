@@ -1,0 +1,37 @@
+
+<form id="paymentForm">
+  <label>Nama:</label>
+  <input type="text" id="nama" required>
+  <label>Nominal (Rp):</label>
+  <input type="number" id="nominal" required>
+  <label>No WhatsApp:</label>
+  <input type="text" id="nowa" required>
+
+  <div class="button-group">
+    <button type="button" class="btn-dana" onclick="kirim('DANA')">Bayar via DANA</button>
+    <button type="button" class="btn-gopay" onclick="kirim('GoPay')">Bayar via GoPay</button>
+    <button type="button" class="btn-ovo" disabled>Bayar via OVO (Belum Tersedia)</button>
+  </div>
+</form>
+
+<div class="qr-section">
+  <h3>📌 Detail Pembayaran:</h3>
+  <p>✅ Silakan transfer sesuai nominal ke salah satu rekening berikut:</p>
+
+  <div class="rekening">
+    <p>DANA: 083865467108</p>
+    <p>GoPay: 083865467108</p>
+    <p>OVO: Belum tersedia</p>
+  </div>
+
+  <h3>📸 Scan QR Pembayaran:</h3>
+  <img src="https://img1.pixhost.to/images/7161/621372785_skyzopedia.jpg" alt="QRIS Payment" class="qr-image">
+
+  <div class="bukti">
+    <p><strong>Kirim bukti transfer ke:</strong></p>
+    <p>📱 083850974918 (WA)</p>
+    <p>📋 Pesanan diproses setelah bukti transfer dikirim dan diverifikasi admin.</p>
+  </div>
+</div>
+
+<div id="hasil"></div>
